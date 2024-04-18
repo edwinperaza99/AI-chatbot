@@ -17,6 +17,9 @@ general_responses = {
         "I'm a bot, so I'm always doing great!",
         "Doing well, thanks for asking!",
     ],
+    r"thank you|thanks": ["You're welcome!", "No problem!"],
+    r"help|what can you do": ["I can help with general location, hours, and services information."],
+    r"what are you|who are you": ["I am a chatbot that can assist with general location, hours, and services information."],
     r"bye|exit": ["Goodbye! Have a great day!", "See you later!"],
 }
 
@@ -201,6 +204,18 @@ buildings = {
         "location": "located at the center of the CSUF campus",
         "hours": LIBRARY_HOURS,
         "contact": "Call: 657-278-3284 or Visit the Research Center during desk hours"
+    },
+    "Circulation Desk": {
+        "regex": r"circulation|circ|checkout.*book|reserve.*book|borrow.*book|return.*book",
+        "location": "located at the first floor of the south side of the Pollak Library",
+        "hours": LIBRARY_HOURS,
+        "contact": "Call Gregory Witmer at (657) 278-2721"
+    },
+    "Titan Card": {
+        "regex": r"titan.*card|id",
+        "location": "located at the first floor of the south side of the Pollak Library",
+        "hours": "Monday to Thursday 8:00 AM to 6:00 PM, Friday 8:00 AM to 5:00 PM, closed on weekends",
+        "contact": "Call (657) 278-3555"
     },
     "Ruby Gerontology Center": {
         "regex": r"ruby|gerontology",
