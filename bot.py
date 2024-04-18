@@ -1,6 +1,6 @@
 import re
 import random
-from responses import responses
+from patterns import responses
 
 
 class Chatbot:
