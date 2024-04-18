@@ -8,7 +8,7 @@ class Chatbot:
         self.buildings = buildings
         self.general = general_responses
         # Identify keywords for location and hours
-        self.location_keywords = r"where|location|locate|direct|get"
+        self.location_keywords = r"where|location|locate|direct|get|find"
         self.hours_keywords = r"when|time|hours|close|open"
 
     def get_response(self, user_input):
