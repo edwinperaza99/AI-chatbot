@@ -46,9 +46,10 @@ class ChatApplication(tk.Tk):
 
         # Create an entry widget for user input
         self.entry_widget = tk.Entry(self, width=90)
-        self.entry_widget.pack(padx=15, pady=15, expand=True, fill=tk.X)
+        self.entry_widget.pack(padx=15, pady=1, expand=True, fill=tk.X)
         self.entry_widget.bind("<Return>", self.on_enter_pressed)
-        # allow the windows to be resizable
+        # allow the windows to be resizable but setting a minimum size
+        self.minsize(200, 400) 
         self.resizable(True, True)
 
     def on_enter_pressed(self, event):
