@@ -15,7 +15,7 @@ class ChatApplication(tk.Tk):
 
         # Create a text widget to display the chat messages
         self.text_widget = tk.Text(self, state="disabled", bg="gray50", wrap="word")
-        self.text_widget.pack(padx=15, pady=15)
+        self.text_widget.pack(padx=15, pady=15, expand=True, fill=tk.BOTH)
 
         # Define custom font here
         customFont = tkFont.Font(family="Helvetica", size=12, weight="bold")
@@ -46,8 +46,10 @@ class ChatApplication(tk.Tk):
 
         # Create an entry widget for user input
         self.entry_widget = tk.Entry(self, width=90)
-        self.entry_widget.pack(padx=15, pady=15)
+        self.entry_widget.pack(padx=15, pady=15, expand=True, fill=tk.X)
         self.entry_widget.bind("<Return>", self.on_enter_pressed)
+        # allow the windows to be resizable
+        self.resizable(True, True)
 
     def on_enter_pressed(self, event):
         """
