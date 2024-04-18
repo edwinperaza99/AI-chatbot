@@ -1,11 +1,15 @@
 import re
 import random
-from patterns import responses
+from patterns import general_responses, buildings
 
 
 class Chatbot:
     def __init__(self):
-        self.responses = responses
+        self.buildings = buildings
+        self.general = general_responses
+        # Identify keywords for location and hours
+        self.location_keywords = r"where|location|locate|direct|get"
+        self.hours_keywords = r"when|time|hours|close|open"
 
     def get_response(self, user_input):
         """
@@ -15,13 +19,28 @@ class Chatbot:
 
         output: response - the chatbot's response
         """
-        # Check for patterns in the user input
-        for pattern, responses in self.responses.items():
-            # Use re.IGNORECASE to make the pattern case-insensitive
+        response_parts = []
+        
+        # Check for general patterns first
+        for pattern, responses in self.general.items():
             if re.search(pattern, user_input, re.IGNORECASE):
-                return random.choice(responses)  # Return a random response
-        # default response if no patterns are found
-        return "Sorry, I don't understand that."
+                response_parts.append(random.choice(responses))
+        
+        # Check for building-specific information
+        for building, info in self.buildings.items():
+            if re.search(info["regex"], user_input, re.IGNORECASE):
+                if re.search(self.location_keywords, user_input, re.IGNORECASE):
+                    response_parts.append(f"The {building} is located at {info['location']}.")
+                if re.search(self.hours_keywords, user_input, re.IGNORECASE):
+                    response_parts.append(f"The hours of operation for the {building} are {info['hours']}.")
+
+        # TODO: add another loop to check for specific help such as registering for classes
+
+        # Compile final response or default if no specific information is found
+        if response_parts:
+            return "\n".join(response_parts)
+        else:
+            return "Sorry, I don't understand that. I am a chatbot that can assist with general location, hours, and services information."
 
 
 if __name__ == "__main__":
