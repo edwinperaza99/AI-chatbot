@@ -10,6 +10,7 @@ class Chatbot:
         # Identify keywords for location and hours
         self.location_keywords = r"where|location|locate|direct|get|find"
         self.hours_keywords = r"when|time|hours|close|open"
+        self.contact_keywords = r"contact|phone|email|reach"
 
     def get_response(self, user_input):
         """
@@ -33,6 +34,8 @@ class Chatbot:
                     response_parts.append(f"The {building} is located at {info['location']}.")
                 if re.search(self.hours_keywords, user_input, re.IGNORECASE):
                     response_parts.append(f"The hours of operation for the {building} are {info['hours']}.")
+                if re.search(self.contact_keywords, user_input, re.IGNORECASE):
+                    response_parts.append(f"To contact {building}, {info['contact']}")
 
         # TODO: add another loop to check for specific help such as registering for classes
 
