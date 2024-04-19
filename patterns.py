@@ -5,7 +5,7 @@ PARKING_HOURS = "Monday to Thursday 7:00 AM to 10:00 PM, Friday 7:00 AM to 5:00 
 # hours for main buildings such as engineering, humanities, etc.
 BUILDING_HOURS = "Monday to Thursday 7:00 AM to 10:00 PM, Friday 7:00 AM to 5:00 PM, Saturday and Sunday 9:00 AM to 5:00 PM"
 
-DEFAULT_CONTACT = "For more information, please contact the department directly."
+DEFAULT_CONTACT = "There is no number listed for this service, but you can try calling the main campus number: (657) 278-2011 ."
 DINNING_CONTACT = "Contact Campus Dining or OC Choice Express at (657) 278-4124 or  csufcampusdining@fullerton.edu"
 
 
@@ -126,32 +126,34 @@ buildings = {
         "contact": DINNING_CONTACT
     },
     "College Park": {
-        "regex": r"college.*park",
+        "regex": r"college.*park|cp",
         "location": "located across our main campus.",
         "hours": "7:00 AM - 10:00 PM. Closed on weekends.",
         "contact": "For more information, please contact (714) 868-2542."
     },
     "Clayes Performing Arts Center": {
-        "regex": r"clayes|performing.*arts",
+        "regex": r"clayes|performing.*arts|cpac",
         "location": "tbd",
-        "hours": "Tuesday–Friday: 12 pm to 4 pm. Closed on major holidays, Winter, Spring and Summer Breaks",
+        "hours": "Tuesday-Friday: 12 pm to 4 pm. Closed on major holidays, Winter, Spring and Summer Breaks",
         "contact": "(657) 278-3371"
     },
     "Computer Science Building": {
         "regex": r"cs|computer.*science",
-        "location": "located on the east side of the campus next to Parking Lot E. The Computer Science Department is on the 5th floor of the Computer Science Building, CS-522",
+        "location": "located on the east side of the campus next to Parking Lot E.",
         "hours": BUILDING_HOURS,
         "contact": "call (657) 278-3700 or CSDept@fullerton.edu"
     },
     "Dan Black Hall": {
         "regex": r"dan.*black|db|hall",
-        "location": "tbd",
-        "hours": "tbd"
+        "location": "located on the south side of campus next to McCarthy Hall.",
+        "hours": BUILDING_HOURS,
+        "contact": DEFAULT_CONTACT
     },
     "Engineering Building": {
         "regex": r"engineering|eng",
-        "location": "tbd",
-        "hours": "tbd"
+        "location": "located on the east side of campus next to the Computer Science Building.",
+        "hours": BUILDING_HOURS,
+        "contact": "call (657) 278-3012"
     },
     "Education Classroom": {
         "regex": r"education|ed|classroom",
@@ -297,7 +299,7 @@ buildings = {
         "location": "tbd",
         "hours": "tbd"
     },
-
 }
+
 
 # TODO: check for laptops, calculators, scantrons, microwaves etc.
