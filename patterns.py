@@ -1,10 +1,13 @@
 # TODO: add factual information 
 # variables for buildings and services that have the same consistent hours
-LIBRARY_HOURS = "Monday to Thursday 7:00 AM to 10:00 PM, Friday 7:00 AM to 5:00 PM, Saturday and Sunday 9:00 AM to 5:00 PM. Times may vary during holidays and breaks."
+LIBRARY_HOURS = "Opens at 7:00 AM Monday to Friday, 9:00 AM on weekends. The south side closes at 10:00 PM Monday to Friday and the north side closes at midnight. Both sides close at 5:00 PM Friday to Sunday. Times may vary during holidays and breaks"
 PARKING_HOURS = "Monday to Thursday 7:00 AM to 10:00 PM, Friday 7:00 AM to 5:00 PM, Saturday and Sunday 9:00 AM to 5:00 PM"
+# hours for main buildings such as engineering, humanities, etc.
+BUILDING_HOURS = "Monday to Thursday 7:00 AM to 10:00 PM, Friday 7:00 AM to 5:00 PM, Saturday and Sunday 9:00 AM to 5:00 PM"
 
 DEFAULT_CONTACT = "For more information, please contact the department directly."
 DINNING_CONTACT = "Contact Campus Dining or OC Choice Express at (657) 278-4124 or  csufcampusdining@fullerton.edu"
+
 
 # Predefined patterns and responses, define more here
 general_responses = {
@@ -63,13 +66,13 @@ buildings = {
         "contact": DINNING_CONTACT
     },
     "Pieology": {
-        "regex": r"pieology",
+        "regex": r"pieology|pizza",
         "location": "located on the first floor of the TSU.",
         "hours": "Monday - Thursday: 10:00 AM - 7:00 PM. Friday: 10:00 AM - 2:00 PM. Hours may vary during summer and holidays.",
         "contact": DINNING_CONTACT
     },
     "Starbucks": {
-        "regex": r"starbucks",
+        "regex": r"starbucks|coffee",
         "location": "There are three locations on campus: in the TSU, Pollak Library, and Mihaylo Hall.",
         "hours": "Hours vary by location, but the Pollak Library location tends to be open the latest. Their hours are: Monday - Thursday: 8:00 AM - 7:00 PM. Friday: 8:00 AM - 1:00 PM",
         "contact": DINNING_CONTACT
@@ -136,8 +139,9 @@ buildings = {
     },
     "Computer Science Building": {
         "regex": r"cs|computer.*science",
-        "location": "tbd",
-        "hours": "tbd"
+        "location": "located on the east side of the campus next to Parking Lot E. The Computer Science Department is on the 5th floor of the Computer Science Building, CS-522",
+        "hours": BUILDING_HOURS,
+        "contact": "call (657) 278-3700 or CSDept@fullerton.edu"
     },
     "Dan Black Hall": {
         "regex": r"dan.*black|db|hall",
