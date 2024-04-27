@@ -11,7 +11,7 @@ DINNING_CONTACT = "Contact Campus Dining or OC Choice Express at (657) 278-4124 
 
 # Predefined patterns and responses, define more here
 general_responses = {
-    r"hi|hello|hey": [
+    r"hi|hello|hey|howdy": [
         "Hello! How can I help you today?",
         "Hi there! What can I do for you?",
         "Hey! Looking for assistance?",
@@ -301,5 +301,19 @@ buildings = {
     },
 }
 
+register_class_responses = {
+    r"register for classes|class registration| how do I register for class": [
+        "You can register for classes in the student portal.",
+        "To register for classes, you can also contact our administration office.",
+        "Registration for classes is available online."
+    ],
+    r"how do I sign up for classes| signups": [
+        "Signing up for classes is easy! You can do it online through our student portal.",
+        "To sign up for classes, log in to your student account and navigate to the registration section.",
+    ],
+    r"when is class registration": [
+        "Class registration starts around April 4th, 2024 for Fall 2024.",
+    ],
+}
 
 # TODO: check for laptops, calculators, scantrons, microwaves etc.
