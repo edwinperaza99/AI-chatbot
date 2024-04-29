@@ -191,15 +191,22 @@ buildings = {
     },
     "Kinesiology and Health Science Building": {
         "regex": r"kinesiology|khs",
-        "location": "tbd",
-        "hours": "tbd",
+        "location": "located off Gymnasium Drive near the Intramural fields towards Yorba Linda Boulevard.",
+        "hours": BUILDING_HOURS,
+        "contact": "call (657) 278-3316",
     },
-    "Langsdorf Hall": {"regex": r"langsdorf|lh", "location": "tbd", "hours": "tbd"},
+    "Langsdorf Hall": {
+        "regex": r"langsdorf|lh",
+        "location": "located southeast of campus next to Gordon Hall",
+        "hours": BUILDING_HOURS,
+        "contact": DEFAULT_CONTACT,
+    },
     "McCarthy Hall": {"regex": r"mccarthy|mh", "location": "tbd", "hours": "tbd"},
     "Parking and Transportation Services": {
         "regex": r"parking|transportation",
-        "location": "tbd",
-        "hours": "tbd",
+        "location": "located south of the campus near Student Health and Counseling Center.",
+        "hours": BUILDING_HOURS,
+        "contact": DEFAULT_CONTACT,
     },
     "Residence Halls": {"regex": r"residence|halls", "location": "tbd", "hours": "tbd"},
     "Pollak Library": {
@@ -212,7 +219,7 @@ buildings = {
         "regex": r"circulation|circ|checkout.*book|reserve.*book|borrow.*book|return.*book",
         "location": "located at the first floor of the south side of the Pollak Library",
         "hours": LIBRARY_HOURS,
-        "contact": "Call Gregory Witmer at (657) 278-2721",
+        "contact": "Call: (657) 278-2721",
     },
     "Titan Card": {
         "regex": r"titan.*card|id",
