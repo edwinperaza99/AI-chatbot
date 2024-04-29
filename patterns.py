@@ -168,19 +168,26 @@ buildings = {
     "Eastside Parking Structure": {
         "regex": r"eastside|parking.*structure",
         "location": "located to the southeast of College of Engineering and Computer Science.",
-        "hours": "",
+        "hours": PARKING_HOURS,
         "contact": PARKING_CONTACT,
     },
     "Golleher Alumni House": {
         "regex": r"golleher|alumni",
-        "location": "tbd",
-        "hours": "tbd",
+        "location": "located off State College Boulevard and Student Union Way",
+        "hours": "Monday to Friday 8:00 AM to 5:00 PM, closed on weekends",
+        "contact": "call (657) 278-2586",
     },
-    "Goodwin Field": {"regex": r"goodwin|field", "location": "tbd", "hours": "tbd"},
+    "Goodwin Field": {
+        "regex": r"goodwin|field",
+        "location": "located off West Campus Drive and Yorba Linda Boulevard, near the Arboretum in the back of campus.",
+        "hours": "has varying hours",
+        "contact": "call (657) 278-2777",
+    },
     "Humanities Building": {
         "regex": r"humanities|hum",
-        "location": "tbd",
-        "hours": "tbd",
+        "location": "located next to the quad and the Pollak Library.",
+        "hours": BUILDING_HOURS,
+        "contact": "call (657) 278-3528  ",
     },
     "Kinesiology and Health Science Building": {
         "regex": r"kinesiology|khs",
