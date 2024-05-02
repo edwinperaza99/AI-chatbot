@@ -294,6 +294,21 @@ register_class_responses = {
     r"when is class registration": [
         "Class registration starts around April 4th, 2024 for Fall 2024.",
     ],
+    r"where can I buy scantrons|scantrons|scantron|where can I get scantrons|how to get scantrons|how do I get scantrons|where can I find scantrons" : [
+        "You can find scantrons at the following locations: Titan Shops/Bookstore, The Brief convenience store (2nd floor of Langsford Hall), The Yum convenience store (1st floor of Titan Student Union), Scantron vending machine 1st floor of College Park, Scantron vending machine 2nd floor of Pollak Library North"
+    ],
+    r"where can I find microwave|microwave|microwaves|where can I use the microwave|is there a microwave?" : [
+         "You can find microwaves in Titan Student Union.",
+         "Microwaves are available in Titan Student Union"
+    ],
+    r"where can I find IT help|Where can I seek IT help" : [
+        "You can get help in Student Genius Center located in the Pollak Library North, first floor.",
+        "The Student Genius Center located in the first floor of Pollak Library North is available to assist you with IT support."
+    ],
+    r"where can I borrow laptop|borrow laptop|laptop|laptops" : [
+        "You can loan out a laptop for the semester in Student Genius Center located in the Pollak Library North, first floor.",
+        "Students can loan out laptops for the semester in Student Genius Center located in the Pollak Library North, first floor."
+    ]
 }
 
 # TODO: check for laptops, calculators, scantrons, microwaves etc.
