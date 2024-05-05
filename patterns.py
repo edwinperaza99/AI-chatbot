@@ -229,38 +229,53 @@ buildings = {
     },
     "Ruby Gerontology Center": {
         "regex": r"ruby|gerontology",
-        "location": "tbd",
-        "hours": "tbd",
+        "location": "located near the Arboretum off Gymnasium drive towards Yorba Linda Boulevard",
+        "hours": BUILDING_HOURS,
+        "contact": DEFAULT_CONTACT,
     },
     "Student Health and Counseling Center": {
         "regex": r"student.*health|counseling",
-        "location": "tbd",
-        "hours": "tbd",
+        "location": "located to the north of McCarthy Hall",
+        "hours": "Mon - Fri: 8 a.m. - 5 p.m.",
+        "contact": "Call (657) 278-2800",
     },
     "Mihaylo Hall": {"regex": r"mihaylo|mh", "location": "tbd", "hours": "tbd"},
     "Student Housing": {
         "regex": r"student.*housing",
-        "location": "tbd",
-        "hours": "tbd",
+        "location": "located on the corner of Nutwood and Folino Drive on the south side of campus",
+        "hours": BUILDING_HOURS,
+        "contact": "Call (657) 278-4652 or email mcbe@fullerton.edu",
     },
     "Student Recreation Center": {
         "regex": r"student.*recreation|src",
-        "location": "tbd",
-        "hours": "tbd",
+        "location": "located off Gymnasium and West Campus Drive across from the tennis courts",
+        "hours": "Monday to Thursday 6:00 AM to 12:00 AM, Friday 6:00 AM to 10:00 PM, Saturday and Sunday 8:00 AM to 10:00 PM. Times vary over summer",
+        "contact": "Call (657) 278-7529 or email titancreation@fullerton.edu",
     },
-    "Titan Stadium": {"regex": r"titan.*stadium", "location": "tbd", "hours": "tbd"},
-    "Titan House": {"regex": r"titan.*house", "location": "tbd", "hours": "tbd"},
-    "Titan Stadium": {"regex": r"titan.*stadium", "location": "tbd", "hours": "tbd"},
+    "Titan Stadium": {
+        "regex": r"titan.*stadium",
+        "location": "located off West Campus Drive and Yorba Linda Boulevard in the back of campus",
+        "hours": BUILDING_HOURS,
+        "contact": "Call (657) 278-2777",
+    },
+    "Titan House": {
+        "regex": r"titan.*house",
+        "location": "located off Gymnasium Drive next to the intramural fields",
+        "hours": BUILDING_HOURS,
+        "contact": DEFAULT_CONTACT,
+    },
     "Titan Student Union": {
         "regex": r"titan.*student.*union|tsu",
-        "location": "next to the Engineering Building",
-        "hours": "Monday to Thursday 7:00 AM to 10:00 PM, Friday 7:00 AM to 5:00 PM, Saturday and Sunday 9:00 AM to 5:00 PM",
+        "location": "located near the middle of the campus off State College Boulevard",
+        "hours": "Monday to Friday 7:00 AM to 10:00 PM, Saturday and Sunday 12:00 PM to 8:00 PM",
+        "contact": "Call (657) 278-2468",
     },
     # direction for services inside buildings below main building
     "Pantry": {
         "regex": r"pantry",
         "location": "TSU",
         "hours": "Monday to Thursday 10:00 AM to 5:00 PM, Friday 10:00 AM to 3:00 PM",
+        "contact": "Call (657) 278-2468",
     },
     "University Hall": {"regex": r"university|uh", "location": "tbd", "hours": "tbd"},
     "University Police": {
@@ -294,21 +309,21 @@ register_class_responses = {
     r"when is class registration": [
         "Class registration starts around April 4th, 2024 for Fall 2024.",
     ],
-    r"where can I buy scantrons|scantrons|scantron|where can I get scantrons|how to get scantrons|how do I get scantrons|where can I find scantrons" : [
+    r"where can I buy scantrons|scantrons|scantron|where can I get scantrons|how to get scantrons|how do I get scantrons|where can I find scantrons": [
         "You can find scantrons at the following locations: Titan Shops/Bookstore, The Brief convenience store (2nd floor of Langsford Hall), The Yum convenience store (1st floor of Titan Student Union), Scantron vending machine 1st floor of College Park, Scantron vending machine 2nd floor of Pollak Library North"
     ],
-    r"where can I find microwave|microwave|microwaves|where can I use the microwave|is there a microwave?" : [
-         "You can find microwaves in Titan Student Union.",
-         "Microwaves are available in Titan Student Union"
+    r"where can I find microwave|microwave|microwaves|where can I use the microwave|is there a microwave?": [
+        "You can find microwaves in Titan Student Union.",
+        "Microwaves are available in Titan Student Union",
     ],
-    r"where can I find IT help|Where can I seek IT help" : [
+    r"where can I find IT help|Where can I seek IT help": [
         "You can get help in Student Genius Center located in the Pollak Library North, first floor.",
-        "The Student Genius Center located in the first floor of Pollak Library North is available to assist you with IT support."
+        "The Student Genius Center located in the first floor of Pollak Library North is available to assist you with IT support.",
     ],
-    r"where can I borrow laptop|borrow laptop|laptop|laptops" : [
+    r"where can I borrow laptop|borrow laptop|laptop|laptops": [
         "You can loan out a laptop for the semester in Student Genius Center located in the Pollak Library North, first floor.",
-        "Students can loan out laptops for the semester in Student Genius Center located in the Pollak Library North, first floor."
-    ]
+        "Students can loan out laptops for the semester in Student Genius Center located in the Pollak Library North, first floor.",
+    ],
 }
 
 # TODO: check for laptops, calculators, scantrons, microwaves etc.
