@@ -7,7 +7,7 @@ BUILDING_HOURS = "Monday to Thursday 7:00 AM to 10:00 PM, Friday 7:00 AM to 5:00
 
 DEFAULT_CONTACT = "There is no number listed for this service, but you can try calling the main campus number: (657) 278-2011 ."
 DINNING_CONTACT = "Contact Campus Dining or OC Choice Express at (657) 278-4124 or  csufcampusdining@fullerton.edu"
-PARKING_CONTACT = "Contact Parking and Transportation Services at (657) 278-3082"
+PARKING_CONTACT = "Contact Parking and Transportation Services at (657) 278-3082 or email csufcampusparking@fullerton.edu"
 
 # Predefined patterns and responses, define more here
 general_responses = {
@@ -277,22 +277,35 @@ buildings = {
         "hours": "Monday to Thursday 10:00 AM to 5:00 PM, Friday 10:00 AM to 3:00 PM",
         "contact": "Call (657) 278-2468",
     },
-    "University Hall": {"regex": r"university|uh", "location": "tbd", "hours": "tbd"},
+    "Gordon Hall": {
+        "regex": r"university hall|uh|gh|gordon",
+        "location": "located next to the quad towards the 57 freeway",
+        "hours": BUILDING_HOURS,
+        "contact": "Call (657) 278-3606",
+    },
     "University Police": {
         "regex": r"university.*police|up",
-        "location": "tbd",
-        "hours": "tbd",
+        "location": "located west side of the campus near Student Recreation Center.",
+        "hours": "They are open 24/7",
+        "contact": "Their non emergency number is (657) 278-2515. For emergencies call 911.",
     },
-    "Visual Arts": {"regex": r"visual|arts", "location": "tbd", "hours": "tbd"},
+    "Visual Arts": {
+        "regex": r"visual|arts",
+        "location": "located adjacent to Nutwood Parking Structure at the corner of Arts Drive and State College Boulevard",
+        "hours": BUILDING_HOURS,
+        "contact": "Call (657) 278-3471 or email artdept@fullerton.edu",
+    },
     "Nutwood Parking Structure": {
         "regex": r"nutwood|parking.*structure",
-        "location": "tbd",
-        "hours": "tbd",
+        "location": "located on the corner of Nutwood and State College Boulevard",
+        "hours": PARKING_HOURS,
+        "contact": PARKING_CONTACT,
     },
     "State College Parking Structure": {
         "regex": r"state.*college|parking.*structure",
-        "location": "tbd",
-        "hours": "tbd",
+        "location": "located to the West of Student Recreation Center",
+        "hours": PARKING_HOURS,
+        "contact": PARKING_CONTACT,
     },
 }
 
