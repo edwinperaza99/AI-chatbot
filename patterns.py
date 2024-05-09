@@ -148,7 +148,7 @@ buildings = {
         "contact": "call (657) 278-3700 or CSDept@fullerton.edu",
     },
     "Dan Black Hall": {
-        "regex": r"dan.*black|db|hall",
+        "regex": r"dan.*black|db",
         "location": "located on the south side of campus next to McCarthy Hall",
         "hours": BUILDING_HOURS,
         "contact": DEFAULT_CONTACT,
@@ -166,7 +166,7 @@ buildings = {
         "contact": "call (657) 278-3411",
     },
     "Eastside Parking Structure": {
-        "regex": r"eastside|parking.*structure",
+        "regex": r"eastside",
         "location": "located to the southeast of College of Engineering and Computer Science",
         "hours": PARKING_HOURS,
         "contact": PARKING_CONTACT,
@@ -222,7 +222,7 @@ buildings = {
         "contact": "Call: (657) 278-2721",
     },
     "Titan Card": {
-        "regex": r"titan.*card|id",
+        "regex": r"titan.*card|id.*card|student.*id",
         "location": "located at the first floor of the south side of the Pollak Library",
         "hours": "Monday to Thursday 8:00 AM to 6:00 PM, Friday 8:00 AM to 5:00 PM, closed on weekends",
         "contact": "Call (657) 278-3555",
@@ -296,13 +296,13 @@ buildings = {
         "contact": "Call (657) 278-3471 or email artdept@fullerton.edu",
     },
     "Nutwood Parking Structure": {
-        "regex": r"nutwood|parking.*structure",
+        "regex": r"nutwood",
         "location": "located on the corner of Nutwood and State College Boulevard",
         "hours": PARKING_HOURS,
         "contact": PARKING_CONTACT,
     },
     "State College Parking Structure": {
-        "regex": r"state.*college|parking.*structure",
+        "regex": r"state.*college",
         "location": "located to the West of Student Recreation Center",
         "hours": PARKING_HOURS,
         "contact": PARKING_CONTACT,
