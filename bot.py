@@ -30,7 +30,7 @@ class Chatbot:
                     response_parts.append(f"{building} is {info['location']}.")
                 if re.search(self.hours_keywords, user_input, re.IGNORECASE):
                     response_parts.append(
-                        f"The hours of operation for the {building} are {info['hours']}."
+                        f"The hours of operation for {building} are {info['hours']}."
                     )
                 if re.search(self.contact_keywords, user_input, re.IGNORECASE):
                     response_parts.append(f"To contact {building}. {info['contact']}")
