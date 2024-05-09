@@ -33,13 +33,13 @@ general_responses = {
 buildings = {
     "Titan Shops": {
         "regex": r"titan.*shops|bookstore|store",
-        "location": "in Commons 2 Dock",
+        "location": "located in Commons 2 Dock",
         "hours": "Mon - Thurs: 7:30 AM - 7:00 PM. Fri: 7:30 AM - 5:00 PM. Closed on weekends",
         "contact": "657.278.3418 or titanshops@fullerton.edu.",
     },
     "Becker Amphitheater": {
         "regex": r"becker|amphitheater",
-        "location": "in front of Titan Shops and the TSU",
+        "location": "located in front of Titan Shops and the TSU",
         "hours": "24/7",
         "contact": DEFAULT_CONTACT,
     },
@@ -158,7 +158,7 @@ buildings = {
         "contact": "call (657) 278-3012",
     },
     "Education Classroom": {
-        "regex": r"education|ed|classroom",
+        "regex": r"education| ec |classroom",
         "location": "located next to the Pollak Library and the Humanities Building",
         "hours": BUILDING_HOURS,
         "contact": "call (657) 278-3411",
@@ -284,7 +284,7 @@ buildings = {
     "University Police": {
         "regex": r"university.*police|up",
         "location": "located west side of the campus near Student Recreation Center",
-        "hours": "They are open 24/7",
+        "hours": "24/7",
         "contact": "Their non emergency number is (657) 278-2515. For emergencies call 911.",
     },
     "Visual Arts": {
@@ -310,7 +310,7 @@ buildings = {
 register_class_responses = {
     r"register for classes|class registration| how do I register for class": [
         "You can register for classes in the student portal.",
-        "To register for classes, you can also contact our administration office.",
+        "To register for classes, you can contact our administration office.",
         "Registration for classes is available online.",
     ],
     r"how do I sign up for classes| signups": [
