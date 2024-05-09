@@ -1,6 +1,6 @@
 import re
 import random
-from patterns import general_responses, buildings, register_class_responses
+from patterns import general_responses, buildings, specific_responses
 
 
 class Chatbot:
@@ -11,7 +11,7 @@ class Chatbot:
         self.location_keywords = r"where|location|locate|direct|get|find"
         self.hours_keywords = r"when|time|hours|close|open"
         self.contact_keywords = r"contact|phone|email|reach"
-        self.register = register_class_responses
+        self.specific = specific_responses
         self.default_responses = [
             "Sorry, I don't understand that. I can assist with general location, hours, and services information.",
             "I couldn't quite catch that. Try asking about locations, hours, or services.",
@@ -41,7 +41,7 @@ class Chatbot:
                     response_parts.append(f"To contact {building}. {info['contact']}")
 
         # check for specific help such as registering for classes
-        for pattern, responses in self.register.items():
+        for pattern, responses in self.specific.items():
             if re.search(pattern, user_input, re.IGNORECASE):
                 response_parts.append(random.choice(responses))
 

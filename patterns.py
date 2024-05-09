@@ -322,7 +322,7 @@ buildings = {
     },
 }
 
-register_class_responses = {
+specific_responses = {
     r"register for classes|class registration| how do I register for class": [
         "You can register for classes in the student portal.",
         "To register for classes, you can contact our administration office.",
@@ -349,5 +349,21 @@ register_class_responses = {
     r"where can I borrow laptop|borrow laptop|laptop|laptops": [
         "You can loan out a laptop for the semester in Student Genius Center located in the Pollak Library North, first floor.",
         "Students can loan out laptops for the semester in Student Genius Center located in the Pollak Library North, first floor.",
+    ],
+    r"where can I find tutoring|tutoring|tutor|tutors": [
+        "You can find tutoring services in the Learning Center located in the Pollak Library North, first floor.",
+        "Tutoring services are available in the Learning Center located in the Pollak Library North, first floor.",
+    ],
+    r"where can I park|parking structure|where can I find parking|where can I park my car": [
+        "You can park in the Eastside Parking Structure, State College Parking Structure, and Nutwood Parking Structure.",
+        "Parking is available in the Eastside Parking Structure, State College Parking Structure, and Nutwood Parking Structure.",
+    ],
+    r"where can I find food|food|where can I eat|where can I find dining": [
+        "You can find food in the Gastronome, Titan Student Union, and College Park.",
+        "Dining options are available in the Gastronome, Titan Student Union, and College Park.",
+    ],
+    r"how do I add money to my Titan Card|add money to Titan Card|add money to my student card": [
+        "You can add money to your Titan Card online or in person at the Titan Card office.",
+        "To add money to your Titan Card, visit the Titan Card office or add funds online.",
     ],
 }
