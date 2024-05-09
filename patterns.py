@@ -128,7 +128,7 @@ buildings = {
         "contact": DINNING_CONTACT,
     },
     "College Park": {
-        "regex": r"college.*park|\bcp\b",
+        "regex": r"college.*park\b|\bcp\b",
         "location": "located across our main campus",
         "hours": "7:00 AM - 10:00 PM. Closed on weekends",
         "contact": "For more information, please contact (714) 868-2542.",
