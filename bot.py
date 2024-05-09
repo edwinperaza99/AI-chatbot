@@ -12,6 +12,11 @@ class Chatbot:
         self.hours_keywords = r"when|time|hours|close|open"
         self.contact_keywords = r"contact|phone|email|reach"
         self.register = register_class_responses
+        self.default_responses = [
+            "Sorry, I don't understand that. I can assist with general location, hours, and services information.",
+            "I couldn't quite catch that. Try asking about locations, hours, or services.",
+            "I'm not sure about that one. Feel free to ask me about campus buildings, hours, or services.",
+        ]
 
     def get_response(self, user_input):
         """
@@ -50,7 +55,7 @@ class Chatbot:
         if response_parts:
             return "\n".join(response_parts)
         else:
-            return "Sorry, I don't understand that. I am a chatbot that can assist with general location, hours, and services information."
+            return random.choice(self.default_responses)
 
 
 if __name__ == "__main__":
