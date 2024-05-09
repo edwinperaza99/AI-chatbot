@@ -1,12 +1,12 @@
 # variables for buildings and services that have the same consistent hours
-LIBRARY_HOURS = "Opens at 7:00 AM Monday to Friday, 9:00 AM on weekends. The south side closes at 10:00 PM Monday to Friday and the north side closes at midnight. Both sides close at 5:00 PM Friday to Sunday. Times may vary during holidays and breaks"
-PARKING_HOURS = "Parking regulations are enforced in all lots, Monday to Thursday 7:00 AM to 10:00 PM, Friday 7:00 AM to 5:00 PM. Parking is enforced 24/7 for special zones including no overnight parking areas, disabled stalls, loading zones and fire lanes"
+LIBRARY_HOURS = "Monday to Thursday 7:00 AM to midnight. Friday 7:00 AM to 5:00. Weekends 9:00 AM to 5:00 PM. The north side of the library closes at midnight on weekdays. Times may vary during holidays and breaks"
+PARKING_HOURS = "Monday to Thursday 7:00 AM to 10:00 PM, Friday 7:00 AM to 5:00 PM. Parking is enforced 24/7 for special zones including no overnight parking areas, disabled stalls, loading zones and fire lanes "
 # hours for main buildings such as engineering, humanities, etc.
 BUILDING_HOURS = "Monday to Thursday 7:00 AM to 10:00 PM, Friday 7:00 AM to 5:00 PM, Saturday and Sunday 9:00 AM to 5:00 PM"
 
-DEFAULT_CONTACT = "There is no number listed for this service, but you can try calling the main campus number: (657) 278-2011 ."
-DINNING_CONTACT = "Contact Campus Dining or OC Choice Express at (657) 278-4124 or  csufcampusdining@fullerton.edu"
-PARKING_CONTACT = "Contact Parking and Transportation Services at (657) 278-3082 or email csufcampusparking@fullerton.edu"
+DEFAULT_CONTACT = "There is no number listed for this service, but you can try calling the main campus number: (657) 278-2011"
+DINNING_CONTACT = "Call Campus Dining or OC Choice Express at (657) 278-4124 or csufcampusdining@fullerton.edu"
+PARKING_CONTACT = "Call Parking and Transportation Services at (657) 278-3082 or email csufcampusparking@fullerton.edu"
 
 # Predefined patterns and responses, define more here
 general_responses = {
@@ -52,7 +52,7 @@ buildings = {
     "Children's Center": {
         "regex": r"children.*center",
         "location": "located just across the Titan Stadium at Children's Wy",
-        "hours": "Open from 7:45AM - 5:45PM, Monday through Thursday, and 7:45AM - 5:15PM on Friday. We are closed on all University holidays and require specialized scheduling during Spring Break, Fall Recess, Winter Recess, and the Summer",
+        "hours": "7:45AM - 5:45PM, Monday through Thursday, and 7:45AM - 5:15PM on Friday. We are closed on all University holidays and require specialized scheduling during Spring Break, Fall Recess, Winter Recess, and the Summer",
         "contact": "Call (657) 278-2961.",
     },
     "Carl's Jr": {
@@ -76,7 +76,7 @@ buildings = {
     "Starbucks": {
         "regex": r"starbucks|coffee",
         "location": "available at three locations on campus: in the TSU, Pollak Library, and Mihaylo Hall",
-        "hours": "Hours vary by location, but the Pollak Library location tends to be open the latest. Their hours are: Monday - Thursday: 8:00 AM - 7:00 PM. Friday: 8:00 AM - 1:00 PM",
+        "hours": "different by location, but the Pollak Library location tends to be open the latest. Their hours are: Monday - Thursday: 8:00 AM - 7:00 PM. Friday: 8:00 AM - 1:00 PM",
         "contact": DINNING_CONTACT,
     },
     "Panda Express": {
@@ -106,7 +106,7 @@ buildings = {
     "Fresh Kitchen": {
         "regex": r"fresh.*kitchen",
         "location": "located on the first floor of the TSU",
-        "hours": "Currently closed",
+        "hours": "not available at the moment, please call for more information",
         "contact": DINNING_CONTACT,
     },
     "Avanti Markets": {
@@ -118,13 +118,13 @@ buildings = {
     "Gastronome": {
         "regex": r"gastronome",
         "location": "located at the Resident Dining Hall",
-        "hours": "Please visit The Titan Eats website for updated hours of operation",
+        "hours": "different throughout the year, call for more information",
         "contact": DINNING_CONTACT,
     },
     "Late Night Cafe": {
         "regex": r"late.*night|cafe",
         "location": "located at the Resident Dining Hall",
-        "hours": "Please visit The Titan Eats website for updated hours of operation",
+        "hours": "different throughout the year, call for more information",
         "contact": DINNING_CONTACT,
     },
     "College Park": {
@@ -178,7 +178,7 @@ buildings = {
     "Goodwin Field": {
         "regex": r"goodwin|field",
         "location": "located off West Campus Drive and Yorba Linda Boulevard, near the Arboretum in the back of campus",
-        "hours": "has varying hours",
+        "hours": "different throughout the year, call for more information",
         "contact": "call (657) 278-2777",
     },
     "Humanities Building": {
