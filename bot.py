@@ -23,11 +23,6 @@ class Chatbot:
         """
         response_parts = []
 
-        # Check for general patterns first
-        for pattern, responses in self.general.items():
-            if re.search(pattern, user_input, re.IGNORECASE):
-                response_parts.append(random.choice(responses))
-
         # Check for building-specific information
         for building, info in self.buildings.items():
             if re.search(info["regex"], user_input, re.IGNORECASE):
@@ -40,10 +35,16 @@ class Chatbot:
                 if re.search(self.contact_keywords, user_input, re.IGNORECASE):
                     response_parts.append(f"To contact {building}. {info['contact']}")
 
-        # TODO: add another loop to check for specific help such as registering for classes
+        # check for specific help such as registering for classes
         for pattern, responses in self.register.items():
             if re.search(pattern, user_input, re.IGNORECASE):
                 response_parts.append(random.choice(responses))
+
+        # Check for general patterns first
+        if response_parts == []:
+            for pattern, responses in self.general.items():
+                if re.search(pattern, user_input, re.IGNORECASE):
+                    response_parts.append(random.choice(responses))
 
         # Compile final response or default if no specific information is found
         if response_parts:
