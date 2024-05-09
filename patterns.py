@@ -1,4 +1,3 @@
-# TODO: add factual information
 # variables for buildings and services that have the same consistent hours
 LIBRARY_HOURS = "Opens at 7:00 AM Monday to Friday, 9:00 AM on weekends. The south side closes at 10:00 PM Monday to Friday and the north side closes at midnight. Both sides close at 5:00 PM Friday to Sunday. Times may vary during holidays and breaks"
 PARKING_HOURS = "Parking regulations are enforced in all lots, Monday to Thursday 7:00 AM to 10:00 PM, Friday 7:00 AM to 5:00 PM. Parking is enforced 24/7 for special zones including no overnight parking areas, disabled stalls, loading zones and fire lanes"
@@ -31,7 +30,6 @@ general_responses = {
 }
 
 # can be used for buildings and services information
-# TODO: add factual information
 buildings = {
     "Titan Shops": {
         "regex": r"titan.*shops|bookstore|store",

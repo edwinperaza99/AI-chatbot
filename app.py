@@ -2,6 +2,7 @@ import tkinter as tk
 import tkinter.font as tkFont
 from bot import Chatbot
 
+
 class ChatApplication(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -47,19 +48,28 @@ class ChatApplication(tk.Tk):
         input_frame.pack(padx=15, pady=10, fill=tk.X)
 
         # Entry widget
-        self.entry_widget = tk.Entry(input_frame, width=35, highlightthickness=0, font=custom_font) 
+        self.entry_widget = tk.Entry(
+            input_frame, width=35, highlightthickness=0, font=custom_font
+        )
         self.entry_widget.grid(row=0, column=0, padx=0, sticky="ew")
         self.entry_widget.bind("<Return>", self.send_message)
+
+        # Set column weights so entry widget takes up all available space
+        input_frame.columnconfigure(0, weight=1)
+        input_frame.columnconfigure(1, weight=0)
+        input_frame.columnconfigure(2, weight=0)
 
         # Create a spacer label
         spacer_label = tk.Label(input_frame, bg="#f0f0f0")
         spacer_label.grid(row=0, column=1, padx=(0, 8))
 
         # Send button
-        self.send_button = tk.Button(input_frame, text="Send", command=self.send_message)
+        self.send_button = tk.Button(
+            input_frame, text="Send", command=self.send_message
+        )
         self.send_button.grid(row=0, column=2, padx=0)
 
-        self.minsize(200, 400) 
+        self.minsize(200, 400)
         self.resizable(True, True)
 
     def send_message(self, event=None):
@@ -77,9 +87,11 @@ class ChatApplication(tk.Tk):
         self.text_widget.config(state="disabled")
         self.text_widget.see(tk.END)
 
+
 def main():
     app = ChatApplication()
     app.mainloop()
+
 
 if __name__ == "__main__":
     main()
