@@ -199,14 +199,24 @@ buildings = {
         "hours": BUILDING_HOURS,
         "contact": DEFAULT_CONTACT,
     },
-    "McCarthy Hall": {"regex": r"mccarthy|mh", "location": "tbd", "hours": "tbd"},
+    "McCarthy Hall": {
+        "regex": r"mccarthy|mh", 
+        "location": "located between Gordon Hall and Greenhouses, right in front of Dan Black Hall", 
+        "hours": BUILDING_HOURS,
+        "contact": "Call: (657) 278-3583"
+    },
     "Parking and Transportation Services": {
         "regex": r"parking|transportation",
         "location": "located south of the campus near Student Health and Counseling Center",
-        "hours": BUILDING_HOURS,
-        "contact": DEFAULT_CONTACT,
+        "hours": "Monday to Friday 8 AM to 5PM",
+        "contact": "Call: 657-278-3082",
     },
-    "Residence Halls": {"regex": r"residence|halls", "location": "tbd", "hours": "tbd"},
+    "Residence Halls": {
+        "regex": r"residence|halls", 
+        "location": "located east of the campus next to The Gastronome", 
+        "hours": "Monday to Friday 8AM to 5PM",
+        "contact": "Call: 657-278-2168"
+    },
     "Pollak Library": {
         "regex": r"library|pollak",
         "location": "located at the center of the CSUF campus",
@@ -237,10 +247,15 @@ buildings = {
         "hours": "Mon - Fri: 8 a.m. - 5 p.m.",
         "contact": "Call (657) 278-2800",
     },
-    "Mihaylo Hall": {"regex": r"mihaylo|mh", "location": "tbd", "hours": "tbd"},
+    "Mihaylo Hall": {
+        "regex": r"mihaylo|mh", 
+        "location": "located on the corner of Nutwood and Folino Drive on the south side of campus", 
+        "hours": BUILDING_HOURS,
+        "contact": "Call 657-278-4652"
+    },
     "Student Housing": {
         "regex": r"student.*housing",
-        "location": "located on the corner of Nutwood and Folino Drive on the south side of campus",
+        "location": "located on the east of engineering and computer science building and north of eastside parking structure",
         "hours": BUILDING_HOURS,
         "contact": "Call (657) 278-4652 or email mcbe@fullerton.edu",
     },
@@ -336,5 +351,3 @@ register_class_responses = {
         "Students can loan out laptops for the semester in Student Genius Center located in the Pollak Library North, first floor.",
     ],
 }
-
-# TODO: check for laptops, calculators, scantrons, microwaves etc.
