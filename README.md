@@ -2,6 +2,8 @@
 
 A rule-based chatbot using regular expressions and predefined patterns. This AI chatbot is designed to assist students, faculty, and visitors of California State University, Fullerton with inquiries regarding the location of buildings, contact information, and operating hours. Our solution enhances user experience by providing an interactive and user-friendly interface for rapid information retrieval.
 
+![CSUF Chatbot interface](screenshots/interface.png)
+
 ## Technologies
 
 - Python
